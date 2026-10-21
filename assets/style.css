@@ -62,8 +62,6 @@ b, strong{ color:var(--ink); font-weight:600; }
   color:rgba(255,255,255,0.84);
 }
 .authors span{ display:inline-block; }
-.authors a{ color:inherit; text-underline-offset:0.18em; }
-.authors a:focus-visible{ outline:1px solid currentColor; outline-offset:3px; border-radius:2px; }
 .authors sup{ font-size:0.7em; line-height:0; }
 .author-note{ margin-top:0.35rem; font-size:0.78rem; line-height:1.5; color:rgba(255,255,255,0.72); }
 .pub-links{ display:flex; flex-wrap:wrap; gap:0.6rem; margin-top:1.5rem; }
