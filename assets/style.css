@@ -331,7 +331,11 @@ table.res.compact th:first-child, table.res.compact td:first-child{ padding-left
 }
 
 
-footer{
-  padding:2.4rem 0; border-top:1px solid var(--line); text-align:center;
-  font-family:var(--mono); font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--muted);
+/* ---------- bibtex ---------- */
+section#bibtex{ padding-bottom:4.4rem; }
+pre.bibtex{
+  margin:0; padding:1.1rem 1.3rem; white-space:pre-wrap; overflow-wrap:anywhere;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg);
+  font-family:var(--mono); font-size:0.8rem; line-height:1.65; color:var(--text);
 }
+@media (max-width:680px){ pre.bibtex{ padding:0.9rem 1rem; font-size:0.74rem; border-radius:var(--r-md); } }
