@@ -333,9 +333,25 @@ table.res.compact th:first-child, table.res.compact td:first-child{ padding-left
 
 /* ---------- bibtex ---------- */
 section#bibtex{ padding-bottom:4.4rem; }
+.bib-box{ position:relative; }
+.bib-copy{
+  position:absolute; top:0.6rem; right:0.6rem; width:34px; height:34px; padding:0;
+  display:grid; place-items:center; cursor:pointer;
+  color:var(--text-2); background:var(--surface); border:1px solid var(--line); border-radius:8px;
+  transition:color .15s ease, background .15s ease;
+}
+.bib-copy:hover{ color:var(--ink); background:var(--surface-2); }
+.bib-copy:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+.bib-copy .i-done{ display:none; }
+.bib-copy.done{ color:var(--accent); }
+.bib-copy.done .i-copy{ display:none; }
+.bib-copy.done .i-done{ display:block; }
 pre.bibtex{
-  margin:0; padding:1.1rem 1.3rem; white-space:pre-wrap; overflow-wrap:anywhere;
+  margin:0; padding:1.1rem 3.6rem 1.1rem 1.3rem; white-space:pre-wrap; overflow-wrap:anywhere;
   background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg);
   font-family:var(--mono); font-size:0.8rem; line-height:1.65; color:var(--text);
 }
-@media (max-width:680px){ pre.bibtex{ padding:0.9rem 1rem; font-size:0.74rem; border-radius:var(--r-md); } }
+@media (max-width:680px){
+  pre.bibtex{ padding:0.9rem 3.2rem 0.9rem 1rem; font-size:0.74rem; border-radius:var(--r-md); }
+  .bib-copy{ top:0.5rem; right:0.5rem; }
+}

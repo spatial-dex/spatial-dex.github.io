@@ -223,3 +223,38 @@ function loadClip(v) {
     hero.pause();
   }
 })();
+
+// BibTeX copy button: brief checkmark on success. Falls back to a selection copy
+// where the async clipboard API is unavailable (e.g. file://).
+(function () {
+  var btn = document.querySelector('.bib-copy');
+  var code = document.querySelector('pre.bibtex code');
+  if (!btn || !code) return;
+  var timer = 0;
+
+  function done() {
+    btn.classList.add('done');
+    btn.setAttribute('aria-label', 'Copied');
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      btn.classList.remove('done');
+      btn.setAttribute('aria-label', 'Copy BibTeX');
+    }, 1600);
+  }
+  function fallback() {
+    var range = document.createRange(), sel = window.getSelection();
+    range.selectNodeContents(code);
+    sel.removeAllRanges();
+    sel.addRange(range);
+    try { if (document.execCommand('copy')) done(); } catch (e) {}
+    sel.removeAllRanges();
+  }
+
+  btn.addEventListener('click', function () {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(code.textContent).then(done, fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
