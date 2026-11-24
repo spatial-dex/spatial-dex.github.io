@@ -407,7 +407,7 @@ function loadClip(v) {
 
 // Reconstruction gallery: an interactive panel for the selected clip. The scene video drives the
 // input video, the timer, the two instruction bars, and the tile progress bar. Each clip plays
-// twice, then the gallery moves to the next tile. Selecting a tile jumps to it. The gallery only
+// once, then the gallery moves to the next tile. Selecting a tile jumps to it. The gallery only
 // runs while it is on screen, and it does not advance by itself under reduced motion. Dragging
 // either instruction bar scrubs the clip, and playback continues from where the bar is released.
 (function () {
@@ -422,8 +422,9 @@ function loadClip(v) {
     return { key: h, el: el, track: el.querySelector('.rg-track'), seg: el.querySelector('.rg-seg'), tick: el.querySelector('.rg-tick'), text: el.querySelector('.rg-text'), a: 0, b: 1 };
   });
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var PLAYS = 2, cur = -1, plays = 0, visible = false, tick = [0, 1], raf = 0, drag = false;
-  var V = 'assets/videos/data/clips/', P = 'assets/posters/data/clips/';
+  var PLAYS = 1, cur = -1, plays = 0, visible = false, tick = [0, 1], raf = 0, drag = false;
+  // Bump VER when the clips are re-rendered, so browsers drop their cached copies.
+  var V = 'assets/videos/data/clips/', P = 'assets/posters/data/clips/', VER = '?v=2';
 
   function nums(s) { return s.split(',').map(parseFloat); }
   function play() {
@@ -459,8 +460,8 @@ function loadClip(v) {
       h.seg.style.left = (100 * s[0]) + '%'; h.seg.style.width = (100 * (s[1] - s[0])) + '%';
       h.text.textContent = t.getAttribute('data-' + h.key);
     });
-    main.poster = P + 'scene_' + id + '.jpg'; side.poster = P + 'input_' + id + '.jpg';
-    main.src = V + 'scene_' + id + '.mp4'; side.src = V + 'input_' + id + '.mp4';
+    main.poster = P + 'scene_' + id + '.jpg' + VER; side.poster = P + 'input_' + id + '.jpg' + VER;
+    main.src = V + 'scene_' + id + '.mp4' + VER; side.src = V + 'input_' + id + '.mp4' + VER;
     main.load(); side.load();
     draw();
     if (visible) play();
