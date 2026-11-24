@@ -12,12 +12,17 @@
   <meta property="og:title" content="SpatialDex: 3D-Grounded Bimanual Dexterity from RGB-Only Human Videos">
   <meta property="og:description" content="Reconstruction-augmented visuomotor pre-training of 3D-grounded bimanual dexterity from RGB-only human videos.">
   <meta property="og:url" content="https://spatial-dex.github.io/">
-  <meta property="og:image" content="https://spatial-dex.github.io/assets/figures/teaser.webp">
+  <meta property="og:image" content="https://spatial-dex.github.io/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://spatial-dex.github.io/assets/og.jpg">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -30,20 +35,24 @@
     <div class="hero-shade"></div>
     <div class="wrap hero-text">
       <h1 class="pub-name">SpatialDex</h1>
-      <p class="pub-title">Reconstruction-Augmented Visuomotor Pre-Training of 3D-Grounded Bimanual Dexterity from RGB-Only Human Videos</p>
+      <p class="pub-title">Reconstruction&#8209;Augmented Visuomotor Pre&#8209;Training of 3D&#8209;Grounded Bimanual Dexterity from RGB&#8209;Only Human Videos</p>
       <div class="authors">
-        <span>Xingyi He<sup>*</sup>,</span>
-        <span>Zhiwen Qiu<sup>*</sup>,</span>
-        <span>Adhitya Polavaram<sup>*</sup>,</span>
-        <span>Yunhao Cao<sup>*</sup>,</span>
-        <span>Cory Fan,</span>
-        <span>Julius Samwer,</span>
-        <span>Saleh Kalantari,</span>
-        <span>Kuan Fang</span>
+        <span class="agrp">
+          <span class="au has-ph"><span class="au-ph" aria-hidden="true"><img src="assets/authors/xingyi_he.webp" width="128" height="128" alt="" decoding="async"></span><a href="#top">Xingyi He</a><sup>*</sup></span>
+          <span class="au has-ph"><span class="au-ph" aria-hidden="true"><img src="assets/authors/zhiwen_qiu.webp" width="128" height="128" alt="" decoding="async"></span><a href="https://www.calvinzqiu.com/" target="_blank" rel="noopener">Zhiwen Qiu</a><sup>*</sup></span>
+          <span class="au has-ph"><span class="au-ph" aria-hidden="true"><img src="assets/authors/adhitya_polavaram.webp" width="128" height="128" alt="" decoding="async"></span><a href="https://www.linkedin.com/in/adhitya-polavaram/" target="_blank" rel="noopener">Adhitya Polavaram</a><sup>*</sup></span>
+          <span class="au has-ph"><span class="au-ph" aria-hidden="true"><img src="assets/authors/yunhao_cao.webp" width="128" height="128" alt="" decoding="async"></span><a href="https://www.quantumcookie.xyz/" target="_blank" rel="noopener">Yunhao Cao</a><sup>*</sup></span>
+        </span>
+        <span class="agrp">
+          <span class="au has-ph"><span class="au-ph" aria-hidden="true"><img src="assets/authors/cory_fan.webp" width="128" height="128" alt="" decoding="async"></span><a href="https://www.linkedin.com/in/cory-fan/" target="_blank" rel="noopener">Cory Fan</a></span>
+          <span class="au has-ph"><span class="au-ph" aria-hidden="true"><img src="assets/authors/julius_samwer.webp" width="128" height="128" alt="" decoding="async"></span><a href="https://juliussamwer.github.io/" target="_blank" rel="noopener">Julius Samwer</a></span>
+          <span class="au has-ph"><span class="au-ph" aria-hidden="true"><img src="assets/authors/saleh_kalantari.webp" width="128" height="128" alt="" decoding="async"></span><a href="https://www.human.cornell.edu/people/saleh-kalantari" target="_blank" rel="noopener">Saleh Kalantari</a></span>
+          <span class="au has-ph"><span class="au-ph" aria-hidden="true"><img src="assets/authors/kuan_fang.webp" width="128" height="128" alt="" decoding="async"></span><a href="https://kuanfang.github.io/" target="_blank" rel="noopener">Kuan Fang</a></span>
+        </span>
       </div>
-      <div class="author-note"><sup>*</sup> Equal contribution.</div>
+      <div class="affil"><a href="https://www.cornell.edu/" target="_blank" rel="noopener"><img src="assets/cornell-logo-white.png" width="748" height="112" alt="Cornell University"></a><span class="author-note"><sup>*</sup> Equal contribution</span></div>
       <div class="pub-links" aria-label="Project resources">
-        <a class="pub-btn primary" href="https://arxiv.org/pdf/2610.29716" target="_blank" rel="noopener">
+        <a class="pub-btn primary" href="https://arxiv.org/abs/2610.29716" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
           Paper
         </a>
@@ -51,11 +60,11 @@
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
           Video
         </a>
-        <a class="pub-btn primary" href="https://github.com/cornell-grill/SpatialDex">
+        <a class="pub-btn primary" href="https://github.com/grillab/SpatialDex" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4.5l-3 15"/></svg>
           Code
         </a>
-        <a class="pub-btn primary" href="https://huggingface.co/datasets/grillab/spatialdex">
+        <a class="pub-btn primary" href="https://huggingface.co/datasets/grillab/spatialdex" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></svg>
           Data
         </a>
@@ -78,11 +87,13 @@
         <h2 class="sec-title">Abstract</h2>
         <p>We present <span class="hl">SpatialDex</span>, a framework that learns 3D-grounded bimanual dexterity from RGB-only human videos through reconstruction-augmented visuomotor pre-training. The central idea is to learn human behavior together with its spatial context. From each video, we reconstruct the scene geometry and estimate the hand motion, and align them at a shared video-level scale using the hand-size prior of 3D hand estimates. We retain the reconstructed geometry as both a policy input and a prediction target. The policy grounds the token grid of a pre-trained vision-language model in this geometry through gated residual fusion, is trained to predict future scene geometry alongside wrist and finger actions, and generates finger motion conditioned on the predicted trajectories of both wrists. Pre-trained on 1M human-video clips and fine-tuned with a small number of robot demonstrations, SpatialDex outperforms state-of-the-art methods by 16.5 points on nine simulated dexterous tasks across two embodiments and by 38.3 points on six real-world bimanual dexterous tasks. Under a matched comparison, pre-training with reconstructed geometry improves success by 14.2 points over pre-training on hand motion alone.</p>
 
+        <h3 class="subhead">Highlights</h3>
         <ul class="points">
-          <li><b>1M human-video clips</b> for pre-training, reconstructed from RGB-only video.</li>
-          <li><b>+38.3 points</b> over the strongest baseline on six real-world bimanual tasks.</li>
-          <li><b>+16.5 points</b> over the strongest baseline on nine simulated tasks across two embodiments.</li>
-          <li><b>+14.2 points</b> from pre-training with reconstructed geometry instead of hand motion alone.</li>
+          <li><b>1M human-video clips with aligned scene geometry and hand motion.</b> We reconstruct depth and camera motion for the clips of VITRA-1M and align them with the hand motion at a shared scale.</li>
+          <li><b>A 3D-grounded visuomotor policy pre-trained on human videos.</b> The released checkpoint fine-tunes to bimanual dexterous tasks with a small number of robot demonstrations.</li>
+          <li><b><span class="from">43.3% &rarr;</span> 81.7%</b> success on six real-world bimanual tasks, from the strongest baseline &pi;<sub>0.5</sub> to SpatialDex.</li>
+          <li><b><span class="from">59.8% &rarr;</span> 76.3%</b> success on nine simulated tasks across two embodiments, from the strongest baseline to SpatialDex.</li>
+          <li><b><span class="from">58.9% &rarr;</span> 73.1%</b> success from pre-training on hand motion alone to pre-training with reconstructed geometry.</li>
         </ul>
       </div>
     </section>
@@ -107,19 +118,71 @@
       </div>
     </section>
 
-    <!-- ============ METHOD ============ -->
+    <!-- ============ RECONSTRUCTION ============ -->
     <section class="block" id="method">
       <div class="wrap content">
-        <h2 class="sec-title">How SpatialDex Works</h2>
-        <p class="lead-p">SpatialDex turns each RGB-only human video into paired supervision of scene geometry and hand motion, pre-trains a 3D-grounded visuomotor policy on that supervision, and adapts the policy to a robot with a small number of teleoperated demonstrations.</p>
-
-        <h3 class="subhead">Aligned Scene and Hand Reconstruction</h3>
+        <h2 class="sec-title">Aligned Scene and Hand Reconstruction</h2>
+        <p class="lead-p">SpatialDex turns each RGB-only human video into paired supervision of scene geometry and hand motion.</p>
         <figure class="fig">
           <img src="assets/figures/pipeline.webp" width="2000" height="420" alt="Data pipeline: hand motion estimation and scene reconstruction from an RGB-only video, joint alignment across frames at a shared scale, producing aligned scene geometry and hand motion." loading="lazy">
           <figcaption>From an RGB-only video, SpatialDex recovers hand meshes and wrist trajectories, point clouds and camera poses up to an unknown scale. Aligning the reconstructed hand points with the estimated hand meshes across frames yields one scale shared by the whole video and a rigid transformation per frame, which places the scene geometry and the hand motion in a common frame. The aligned reconstruction supplies the depth observations, the wrist and finger action targets, and the future geometry targets for policy pre-training.</figcaption>
         </figure>
 
-        <h3 class="subhead">3D-Grounded Visuomotor Policy</h3>
+        <h3 class="subhead" id="dataset">Pre-Training Dataset</h3>
+        <p>We release the reconstructed scene geometry for 1.16M clips of <a href="https://arxiv.org/abs/2510.21571" target="_blank" rel="noopener">VITRA-1M</a>, with a depth map and a camera for each of 31.7M frames estimated with <a href="https://arxiv.org/abs/2605.15195" target="_blank" rel="noopener">VGGT-&Omega;</a>. Each clip is packaged with the MANO hand poses and the per-hand instructions of VITRA-1M, so that geometry, motion, and language load together.</p>
+
+        <figure class="fig viz">
+          <div class="viz-frame" style="aspect-ratio:16/9">
+            <video class="lazy" muted loop playsinline preload="none" poster="assets/posters/data/reconstruction.jpg" data-src="assets/videos/data/reconstruction.mp4" aria-label="Reconstructed human-video clips: scene point cloud, camera, and both hands next to the input video and the instruction of each hand."></video>
+          </div>
+          <figcaption>Reconstructed human videos. The left panel shows the scene geometry, the camera, and the motion of both hands recovered from an RGB video. The right panel shows the input video with the estimated hands and the instruction of each hand.</figcaption>
+        </figure>
+
+        <figure class="fig viz">
+          <div class="viz-frame" style="aspect-ratio:4/1">
+            <video class="lazy" muted loop playsinline preload="none" poster="assets/posters/data/gallery.jpg" data-src="assets/videos/data/gallery.mp4" aria-label="Reconstructed scene point clouds and hands from twelve human-video clips."></video>
+          </div>
+          <figcaption>Reconstructed scenes and hand motion from twelve more clips.</figcaption>
+        </figure>
+
+        <p class="tbl-cap"><b>Contents of each frame.</b> Every frame of a clip carries the fields below.</p>
+        <div class="table-scroll">
+          <table class="res spec">
+            <thead>
+              <tr><th>Field</th><th>Contents</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Depth</td><td>A depth map of the scene at about 512&sup2; pixels, stored losslessly at millimeter precision.</td></tr>
+              <tr><td>Camera</td><td>The camera pose and intrinsics, which place every frame of a clip in one coordinate frame.</td></tr>
+              <tr><td>Hands</td><td>MANO pose, shape, and 21 joints in 3D for the left and right hand, with a validity flag for each frame.</td></tr>
+              <tr><td>Language</td><td>The instruction that each hand is carrying out. The dataset holds 1.56M instruction segments, each with five rephrasings.</td></tr>
+              <tr><td>Source</td><td>The video ID and frame index, used to decode the RGB frame from the original video.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="tbl-cap"><b>Dataset composition by source.</b> Hours are computed from the native frame rate of each source. RGB frames are not redistributed and are decoded from the original videos. Ego-Exo4D, which the paper also uses for pre-training, is not part of this release.</p>
+        <div class="table-scroll">
+          <table class="res">
+            <thead>
+              <tr><th>Source</th><th>Episodes</th><th>Frames</th><th>Hours</th><th>Source videos</th><th>Size</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Ego4D</td><td>948,561</td><td>23,392,849</td><td>217</td><td>2,444</td><td>1.42 TB</td></tr>
+              <tr><td>EPIC-KITCHENS</td><td>153,896</td><td>7,222,228</td><td>33</td><td>580</td><td>427 GB</td></tr>
+              <tr><td>Something-Something v2</td><td>52,718</td><td>1,125,013</td><td>26</td><td>39,980</td><td>53 GB</td></tr>
+              <tr class="sep ours"><td>Total</td><td>1,155,175</td><td>31,740,090</td><td>276</td><td>43,004</td><td>1.90 TB</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POLICY ============ -->
+    <section class="block" id="policy">
+      <div class="wrap content">
+        <h2 class="sec-title">3D-Grounded Visuomotor Policy</h2>
+        <p class="lead-p">The policy is pre-trained on this supervision and adapted to a robot with a small number of teleoperated demonstrations.</p>
         <figure class="fig">
           <img src="assets/figures/policy.webp" width="2000" height="485" alt="Policy architecture: depth is back-projected and encoded into a geometry grid aligned with the visual grid, fused through dual sigmoid gates into a VLM backbone, which feeds wrist and finger experts and a training-only geometry predictor." loading="lazy">
           <figcaption>Reconstructed geometry enters the policy in two roles: as an <b>input</b>, fused into the visual token grid of a pre-trained VLM, and as a <b>target</b>, predicted at future frames by a training-only head.</figcaption>
@@ -136,8 +199,8 @@
     <!-- ============ REAL-WORLD ============ -->
     <section class="block" id="real-world">
       <div class="wrap content">
-        <h2 class="sec-title">Dexterous Manipulation on a Real Robot</h2>
-        <p class="lead-p">We evaluate on a bimanual platform with Wuji hands on Tianji arms. For each task we collect 50 teleoperated demonstrations and run 10 trials per method. The clips below show SpatialDex on four scene variations of each task, played at 4&times; speed.</p>
+        <h2 class="sec-title">Bimanual Dexterous Manipulation</h2>
+        <p class="lead-p">We evaluate on a bimanual platform with Wuji hands on Tianji arms. For each task we collect 50 teleoperated demonstrations and run 10 trials per method. The clips below show SpatialDex on four scene variations of each task.</p>
 
         <div class="task-list">
           <nav class="tabbar task-nav" aria-label="Real-world tasks">
@@ -268,8 +331,8 @@
     <!-- ============ BASELINE COMPARISON ============ -->
     <section class="block" id="comparison">
       <div class="wrap content">
-        <h2 class="sec-title">End-to-End Comparison with Baselines</h2>
-        <p class="lead-p">Full rollouts of SpatialDex, the strongest baseline <a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener">&pi;<sub>0.5</sub></a>, and the human-video pre-trained <a href="https://arxiv.org/abs/2510.21571" target="_blank" rel="noopener">VITRA</a> on three of the six tasks, with comparable table setups and played at 4&times; speed. The percentage next to each method is its success rate over ten trials on that task; the baseline clips show typical failures.</p>
+        <h2 class="sec-title">Qualitative Comparison with Baselines</h2>
+        <p class="lead-p">Full rollouts of SpatialDex, the strongest baseline <a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener">&pi;<sub>0.5</sub></a>, and the human-video pre-trained <a href="https://arxiv.org/abs/2510.21571" target="_blank" rel="noopener">VITRA</a> on three of the six tasks, with comparable table setups. The percentage next to each method is its success rate over ten trials on that task; the baseline clips show typical failures.</p>
 
         <div class="cmp" id="cmp-flower">
           <h3 class="cmp-task">Pass Flower</h3>
@@ -366,20 +429,27 @@
     <!-- ============ BENCHMARK ============ -->
     <section class="block" id="benchmark">
       <div class="wrap content">
-        <h2 class="sec-title">Benchmark Evaluation</h2>
+        <h2 class="sec-title">Evaluation in Simulation</h2>
         <p class="lead-p">We evaluate nine simulated tasks on two embodiments. SpatialDex reaches <span class="hl">76.3%</span> mean success, compared with 59.8% for the strongest baseline, &pi;<sub>0.5</sub>, with the largest gains on tasks that require bimanual coordination.</p>
 
         <h3 class="subhead">DexJoCo Benchmark</h3>
-        <figure class="fig">
-          <img src="assets/figures/sim_dexjoco.webp" width="2000" height="1135" alt="Six DexJoCo tasks with Allegro hands on Franka arms: Fold Glasses, Hammer Nail, Water Plant, Pick Bucket, Bimanual Assembly, and Bimanual Microwave." loading="lazy">
-          <figcaption>Six <a href="https://arxiv.org/abs/2605.16257" target="_blank" rel="noopener">DexJoCo</a> tasks with Allegro hands on Franka arms. Fold Glasses (a), Hammer Nail (b), Water Plant (c), and Pick Bucket (d) are unimanual; Bimanual Assembly (e) and Bimanual Microwave (f) require coordinating both arms.</figcaption>
-        </figure>
+        <div class="sim-grid">
+          <figure><img src="assets/figures/sim/fold_glasses.webp" width="654" height="490" alt="Fold Glasses in simulation." loading="lazy"><figcaption>Fold Glasses</figcaption></figure>
+          <figure><img src="assets/figures/sim/hammer_nail.webp" width="654" height="490" alt="Hammer Nail in simulation." loading="lazy"><figcaption>Hammer Nail</figcaption></figure>
+          <figure><img src="assets/figures/sim/water_plant.webp" width="654" height="490" alt="Water Plant in simulation." loading="lazy"><figcaption>Water Plant</figcaption></figure>
+          <figure><img src="assets/figures/sim/pick_bucket.webp" width="654" height="490" alt="Pick Bucket in simulation." loading="lazy"><figcaption>Pick Bucket</figcaption></figure>
+          <figure><img src="assets/figures/sim/assembly.webp" width="654" height="490" alt="Bimanual Assembly in simulation." loading="lazy"><figcaption>Bimanual Assembly</figcaption></figure>
+          <figure><img src="assets/figures/sim/microwave.webp" width="654" height="490" alt="Bimanual Microwave in simulation." loading="lazy"><figcaption>Bimanual Microwave</figcaption></figure>
+        </div>
+        <p class="grid-cap">Six <a href="https://arxiv.org/abs/2605.16257" target="_blank" rel="noopener">DexJoCo</a> tasks with Allegro hands on Franka arms. The first four tasks are unimanual, and Bimanual Assembly and Bimanual Microwave require coordinating both arms.</p>
 
         <h3 class="subhead">Our Wuji + Tianji Tasks</h3>
-        <figure class="fig">
-          <img src="assets/figures/sim_wuji.webp" width="2000" height="559" alt="Three bimanual tasks with Wuji hands on Tianji arms: Relocate Ball, Pass Toy, and Sweep Trash." loading="lazy">
-          <figcaption>We introduce three bimanual tasks, Relocate Ball (g), Pass Toy (h), and Sweep Trash (i), with Wuji hands on Tianji arms, the same embodiment as our real robot, to evaluate the policy on hands with more degrees of freedom.</figcaption>
-        </figure>
+        <div class="sim-grid">
+          <figure><img src="assets/figures/sim/relocate_ball.webp" width="654" height="490" alt="Relocate Ball in simulation." loading="lazy"><figcaption>Relocate Ball</figcaption></figure>
+          <figure><img src="assets/figures/sim/pass_toy.webp" width="654" height="490" alt="Pass Toy in simulation." loading="lazy"><figcaption>Pass Toy</figcaption></figure>
+          <figure><img src="assets/figures/sim/sweep_trash.webp" width="654" height="490" alt="Sweep Trash in simulation." loading="lazy"><figcaption>Sweep Trash</figcaption></figure>
+        </div>
+        <p class="grid-cap">We introduce three bimanual tasks with Wuji hands on Tianji arms, the same embodiment as our real robot, to evaluate the policy on hands with more degrees of freedom.</p>
 
         <h3 class="subhead">Per-Task Success Rates</h3>
         <p class="tbl-cap"><b>Simulation success rates (%).</b> Means over three seeds with 50 episodes per seed. Averages are unweighted over unimanual Allegro, bimanual Allegro, bimanual Wuji, and all nine tasks. Best per column in bold.</p>
